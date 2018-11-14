@@ -24,6 +24,7 @@
                     <div class="causes">
                         <h2>Causes Donated To</h2>
                         <ul>
+                            
                             <?php $causes = []; ?>
                             @foreach($user->reports as $report)
                                 @if(!in_array(($report->cause_id), $causes))

@@ -32,7 +32,7 @@ class TrackController extends Controller
         $user = User::where('id', auth()->id())->first();
         $cause = Cause::where('id', $cause_id)->first();
         $report = new Report();
-        // Check if campaign exist or inactive
+        //Check if campaign exist or inactive
         if(is_null($cause))
             return 'The cause you want to donate not exist.';
 

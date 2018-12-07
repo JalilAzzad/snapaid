@@ -27,7 +27,9 @@
                             <?php $causes = []; ?>
                             @foreach($user->reports as $report)
                                 @if(!in_array(($report->cause_id), $causes))
-                                <li><a href="/causes/{{$report->cause->slug}}">{{$report->cause->title}}</a></li>
+                                <li>
+                                    <a href="/causes/{{$report->cause->slug}}">{{$report->cause->title}}</a>
+                                </li>
                                 <?php array_push($causes, $report->cause_id); ?>
                                 @endif
                             @endforeach

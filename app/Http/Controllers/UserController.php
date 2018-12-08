@@ -49,6 +49,7 @@ class UserController extends Controller
         $user = User::where('id', (int) $id)->where('is_confirmed', true)->with('causes', 'reports', 'reports.cause')->first();
         if(is_null($user))
             abort(404);
+        
         return view('profile', compact('user'));
     }
 

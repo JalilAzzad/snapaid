@@ -151,6 +151,7 @@ class CausesController extends Controller
     public function edit($id)
     {
         //
+        
     }
 
     /**

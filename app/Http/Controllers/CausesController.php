@@ -28,6 +28,7 @@ class CausesController extends Controller
             ->get();
 
         $value = $request->input('q', "");
+
         if(empty($value))
         {
             $categories = CausesCategory::with('causes')->get();
@@ -137,8 +138,6 @@ class CausesController extends Controller
         $cause = Cause::where('slug', (string) $slug)->first();
         if(is_null($cause))
             abort(404);
-
-
 
         return view('causes.showWall', ['cause' => $cause]);
     }

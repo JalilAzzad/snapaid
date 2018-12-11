@@ -90,13 +90,8 @@
         </div>
     </div>
 
-
-
-
     <div class="fluid-container app">
         <div class="container">
-
-
 
             <div class="row justify-content-between d-md-flex flex-lg-row flex-column-reverse">
                 <div class="col-lg-5 ">

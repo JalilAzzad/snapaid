@@ -54,14 +54,6 @@
             </div>
         </div>
     </div>
-
-
-
-
-
-
-
-
     <div class="fluid-container shot">
         <div class="container" style="z-index: 1;">
             <div class="row text-center">

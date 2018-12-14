@@ -1,0 +1,84 @@
+.featured-charities .search {
+	text-align:center;
+	float:none;
+	width: 685px;
+	margin: 10px auto;
+	padding-bottom: 10px;
+	position: relative;
+}
+.search input {
+	background: #fff;
+	padding: 15px;
+	margin: 10px 15px 0 0;
+	width: 670px;
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	-webkit-transition: all 0.30s ease-in-out;
+	-moz-transition: all 0.30s ease-in-out;
+	-ms-transition: all 0.30s ease-in-out;
+	-o-transition: all 0.30s ease-in-out;
+}
+#searchResults{
+	padding-right: 15px;
+	position: absolute;
+	width: 100%;
+}
+#searchResults > div{
+	cursor: pointer;
+	font-size: 18px;
+	text-align: left;
+	padding: 5px 20px;
+	background: #fff;
+	border-bottom: 1px solid #ddd;
+	cursor: pointer;
+}
+#searchResults > div:hover{
+	background: #eee;
+}
+.textbox-left{
+	width: 48%;
+	margin-right:2%;
+	display: inline-block;
+}
+.textbox-right{
+	width: 48%;
+	display: inline-block;
+}
+ul.selected_charity_list {
+	list-style: none;
+	margin: 0 auto;
+	display: block;
+}
+.selected_charity_list .charity-list-item {
+height: 182px;
+cursor: pointer;
+width: 98px;
+float: left;
+margin: 0 12px;
+}
+.selected_charity_list .charity-list-item .icon-wrap {
+	overflow: hidden;
+	height: 99px;
+	width: 99px;
+	float: left;
+	border: 2px solid #c9d0db;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	background: #fff;
+}
+.selected_charity_list .charity-list-item .icon-text {
+	text-align: center;
+}
+.selected_charity_list .charity-list-item .charity-icon {
+	background-repeat: no-repeat;
+	background-position: center center;
+	-webkit-background-size: contain;
+	-moz-background-size: contain;
+	-o-background-size: contain;
+	background-size: 64px;
+	height: 100%;
+}
+.selected_charity_list .charity-list-item .charity-icon.no-margin{
+	margin: 0;
+}

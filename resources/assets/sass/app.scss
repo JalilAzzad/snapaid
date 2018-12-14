@@ -1,0 +1,41 @@
+
+// Fonts
+//@import url(https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Comfortaa:400,700,300);
+@import url(https://fonts.googleapis.com/css?family=Rubik:300,500);
+@import url(https://fonts.googleapis.com/css?family=Raleway:500);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+
+// Variables
+@import "variables";
+
+@import "style";
+@import "slicknav";
+@import "navbar";
+
+
+// Bootstrap
+//@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+@import "bootstrap";
+@import "node_modules/select2/src/scss/core";
+
+
+.rounded-circle {
+  border-radius: 50%;
+  max-width: 75px;
+  max-height: 75px;
+  border: 1px solid #eee;
+  width: 100%;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0,0,0,.1), 0 6px 25px 0 rgba(0,0,0,.19);
+}
+
+img.logo {
+  width: 227px;
+}
+
+@media screen and (max-width: 670px){
+  img.logo {
+    width: 180px;
+  }
+}

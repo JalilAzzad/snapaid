@@ -1,0 +1,151 @@
+
+
+#navBar
+{
+	position: fixed;
+	width: 223px;
+	margin-top: 10px;
+    margin-right: 10px;
+    z-index: 999999;
+    right: 0;
+    display: none;
+}
+
+
+.navButton {
+    width: 62px;
+    height: 62px;
+    line-height: 80px;
+    text-align: center;
+    position: relative;
+    background-color: #f53123;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.4s;
+    right: -161px;
+}
+
+
+.navButton::after
+{
+	content: '\f00d';
+    font-family: FontAwesome;
+    font-weight: normal;
+    position: absolute;
+    right: 32px;
+    top: -8px;
+    transition: 0.3s;
+    color: white;
+    font-size: 18px;
+    opacity: 0;
+}
+
+
+
+
+.navButton img
+{
+	transition: all 1s;
+	margin-left: 0;
+	vertical-align: initial;
+}
+
+
+.navButton span
+{
+	transition: all 0.4s;
+	position: absolute;
+	font-family: 'Comfortaa', cursive;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 62px;
+    color: #fff;
+    text-transform: uppercase;
+    left: 30px;
+    opacity: 0;
+}
+
+
+.navButton.active
+{
+	transition: all 0.4s;
+	width: 222px;
+	right: 0;
+}
+
+
+.navButton.active::after
+{
+	opacity: 1;
+}
+
+
+.navButton.active img
+{
+	transition: all 1s;
+	position: relative;
+	margin-left: -130%;
+}
+
+
+.navButton.active span
+{
+	opacity: 1;
+	transition: all 1s;
+}
+
+
+
+
+.navvv
+{
+	width: 222px;
+    position: relative;
+    background-color: #2f2f2f;
+    display: none;
+}
+
+.navvv ul
+{
+	padding: 5px 32px 0 32px;
+	margin: 0;
+}
+
+.navvv ul li
+{
+	list-style: none;
+	height: 62px;
+	line-height: 62px;
+	background-image: url(img/divider.png);
+	background-repeat: repeat-x;
+	background-color: transparent;
+}
+
+.navvv ul li:first-child
+{
+	background-image: none;
+}
+
+.navvv ul li a
+{
+	text-decoration: none;
+	font: bold 18px/22px Comfortaa;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	transition: all 0.4s;
+}
+
+
+@media all and (min-width: 1112px) 
+{
+	.navButton:hover
+	{
+	    background-color: #3a3a3a;
+	}
+	.navvv ul li a:hover
+	{
+		color: #1abc9c;
+		transition: all 0.4s;
+	}
+
+}

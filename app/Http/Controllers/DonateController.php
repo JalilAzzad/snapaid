@@ -15,6 +15,7 @@ class DonateController extends Controller
             abort(404);
 
         $client = new Client();
+        
         $res = $client->get(env('API_URL').'api/wall/'.env('API_KEY').'/json?incent=1&mobile=1');
         $res = json_decode($res->getBody(), true);
 

@@ -40,7 +40,6 @@ class TrackController extends Controller
             $report->user_id     = $user->id;
         $report->cause_id    = $cause->id;
         $report->status      = 1;
-
         $report->save();
 
         $url = urlencode(env('APP_URL').'/credit_hash/'.$report->id);
